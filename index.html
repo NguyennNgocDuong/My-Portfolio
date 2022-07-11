@@ -38,51 +38,50 @@
     />
     <!-- MY CSS -->
     <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/responsive.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg py-3">
-          <a class="navbar-brand" href="#">
-            <i class="fa fa-dice-d20"></i>
-            <span>CyberPortfolio</span>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <header class="container">
+      <nav class="navbar navbar-expand-lg py-3">
+        <a class="navbar-brand" href="#">
+          <i class="fa fa-dice-d20"></i>
+          <span>CyberPortfolio</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <div id="portfolio__carousel">
       <div class="bd-example">
         <div
           id="carouselExampleCaptions"
-          class="carousel slide"
+          class="carousel slide carousel-fade"
           data-ride="carousel"
         >
           <ol class="carousel-indicators">
@@ -97,7 +96,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="./image/finland.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption container">
                 <img
                   class="animate__animated animate__fadeInUp"
                   src="./image/01-3.jpg"
@@ -121,7 +120,7 @@
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption container">
                 <img
                   class="animate__animated animate__fadeInUp"
                   src="./image/02-3.jpg"
@@ -146,7 +145,7 @@
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption container">
                 <img
                   class="animate__animated animate__fadeInUp"
                   src="./image/03-3.jpg"
@@ -170,7 +169,7 @@
       </div>
     </div>
     <div id="portfolio__project" class="py-5">
-      <div class="container">
+      <div class="container py-5">
         <div class="project__title text-center mx-auto">
           <h3 class="text-dark text-center">I Love What I Do</h3>
           <p class="text-secondary text-center">
@@ -245,7 +244,9 @@
               aria-labelledby="pills-projects-tab"
             >
               <div class="row">
-                <div class="col-4 animate__animated animate__zoomIn">
+                <div
+                  class="col-12 col-sm-6 col-lg-4 animate__animated animate__zoomIn"
+                >
                   <div class="card project__item">
                     <img src="./image/g1.jpg" class="card-img-top" alt="" />
                     <div class="card-body text-center">
@@ -254,7 +255,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4 animate__animated animate__zoomIn">
+                <div
+                  class="col-12 col-sm-6 col-lg-4 animate__animated animate__zoomIn"
+                >
                   <div class="card project__item">
                     <img src="./image/g2.jpg" class="card-img-top" alt="" />
                     <div class="card-body text-center">
@@ -263,7 +266,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4 animate__animated animate__zoomIn">
+                <div
+                  class="col-12 col-sm-6 col-lg-4 animate__animated animate__zoomIn"
+                >
                   <div class="card project__item">
                     <img src="./image/g3.jpg" class="card-img-top" alt="" />
                     <div class="card-body text-center">
@@ -272,7 +277,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4 animate__animated animate__zoomIn">
+                <div
+                  class="col-12 col-sm-6 col-lg-4 animate__animated animate__zoomIn"
+                >
                   <div class="card project__item">
                     <img src="./image/g4.jpg" class="card-img-top" alt="" />
                     <div class="card-body text-center">
@@ -281,7 +288,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4 animate__animated animate__zoomIn">
+                <div
+                  class="col-12 col-sm-6 col-lg-4 animate__animated animate__zoomIn"
+                >
                   <div class="card project__item">
                     <img src="./image/g5.jpg" class="card-img-top" alt="" />
                     <div class="card-body text-center">
@@ -290,7 +299,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4 animate__animated animate__zoomIn">
+                <div
+                  class="col-12 col-sm-6 col-lg-4 animate__animated animate__zoomIn"
+                >
                   <div class="card project__item">
                     <img src="./image/g6.jpg" class="card-img-top" alt="" />
                     <div class="card-body text-center">
@@ -308,7 +319,9 @@
               aria-labelledby="pills-illustration-tab"
             >
               <div class="row">
-                <div class="col-4 animate__animated animate__zoomIn">
+                <div
+                  class="col-12 col-sm-6 col-lg-4 animate__animated animate__zoomIn"
+                >
                   <div class="card project__item">
                     <img src="./image/g1.jpg" class="card-img-top" alt="" />
                     <div class="card-body text-center">
@@ -317,7 +330,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4 animate__animated animate__zoomIn">
+                <div
+                  class="col-12 col-sm-6 col-lg-4 animate__animated animate__zoomIn"
+                >
                   <div class="card project__item">
                     <img src="./image/g2.jpg" class="card-img-top" alt="" />
                     <div class="card-body text-center">
@@ -326,7 +341,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4 animate__animated animate__zoomIn">
+                <div
+                  class="col-12 col-sm-6 col-lg-4 animate__animated animate__zoomIn"
+                >
                   <div class="card project__item">
                     <img src="./image/g3.jpg" class="card-img-top" alt="" />
                     <div class="card-body text-center">
@@ -344,7 +361,9 @@
               aria-labelledby="pills-photography-tab"
             >
               <div class="row">
-                <div class="col-4 animate__animated animate__zoomIn">
+                <div
+                  class="col-12 col-sm-6 col-lg-4 animate__animated animate__zoomIn"
+                >
                   <div class="card project__item">
                     <img src="./image/g3.jpg" class="card-img-top" alt="" />
                     <div class="card-body text-center">
@@ -353,7 +372,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4 animate__animated animate__zoomIn">
+                <div
+                  class="col-12 col-sm-6 col-lg-4 animate__animated animate__zoomIn"
+                >
                   <div class="card project__item">
                     <img src="./image/g4.jpg" class="card-img-top" alt="" />
                     <div class="card-body text-center">
@@ -371,7 +392,9 @@
               aria-labelledby="pills-website-tab"
             >
               <div class="row">
-                <div class="col-4 animate__animated animate__zoomIn">
+                <div
+                  class="col-12 col-sm-6 col-lg-4 animate__animated animate__zoomIn"
+                >
                   <div class="card project__item">
                     <img src="./image/g6.jpg" class="card-img-top" alt="" />
                     <div class="card-body text-center">
@@ -400,7 +423,7 @@
         </div>
         <div class="feature__content text-center mt-5 pt-3">
           <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-md-4 mb-5">
               <div class="feature__item">
                 <i class="fa fa-paint-brush"></i>
                 <h4>Design</h4>
@@ -410,7 +433,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4 mb-5">
               <div class="feature__item">
                 <i class="fa fa-shekel-sign"></i>
                 <h4>Marketing</h4>
@@ -420,7 +443,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4 mb-5">
               <div class="feature__item">
                 <i class="fa fa-camera"></i>
                 <h4>Photography</h4>
@@ -438,7 +461,7 @@
       <div class="award__bg"></div>
       <div class="container">
         <div class="row">
-          <div class="col-5">
+          <div class="col-12 col-md-6 col-lg-5">
             <div class="award__left">
               <h2>Our Achievement and Award</h2>
               <p>
@@ -447,7 +470,7 @@
               </p>
             </div>
           </div>
-          <div class="col-7">
+          <div class="col-12 col-md-6 col-lg-7">
             <div class="award__right">
               <p>
                 Luctus porta semper aptent morbi. Vestibulum lectus tempus augue

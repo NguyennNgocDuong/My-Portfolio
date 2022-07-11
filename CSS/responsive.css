@@ -1,0 +1,57 @@
+@media screen and (max-width: 1199.98px) {
+  header.container {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  header .nav-link {
+    background: #fff;
+    color: #35a22c;
+    margin: 0;
+  }
+  header .nav-item:hover .nav-link {
+    background: rgb(53, 162, 44);
+    color: #fff;
+  }
+  header .nav-item .nav-link:after {
+    display: none;
+  }
+  header .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .award .container {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .project__content .nav-link {
+    padding: 0.5rem;
+  }
+  .award__bg {
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 415px) {
+  header .navbar-brand {
+    font-size: 7vw;
+  }
+  header .navbar-brand i {
+    font-size: 8vw;
+  }
+  #portfolio__carousel .carousel-caption h5 {
+    font-size: 8vw;
+    line-height: 10vw;
+  }
+  #portfolio__carousel .carousel-caption p {
+    font-size: 5vw;
+  }
+  .project__content .nav-item {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-height: 415px) {
+  .carousel-caption img {
+    width: 100px;
+  }
+}

@@ -10,10 +10,10 @@
 /* HEADER */
 header {
   position: absolute;
-  width: 100%;
   top: 0;
-  left: 0;
-  z-index: 1;
+  left: 50%;
+  z-index: 100;
+  transform: translateX(-50%);
 }
 header .navbar-brand {
   font-size: 36px;
@@ -23,10 +23,10 @@ header i {
   font-size: 2.75rem;
   color: #35a22c;
 }
-header .nav-item .nav-link {
+header .nav-link {
   color: #fff;
-  margin: 0 20px;
   position: relative;
+  margin: 0 10px;
 }
 header .nav-link:hover {
   color: rgb(53, 162, 44);
@@ -52,10 +52,23 @@ header .nav-item.active .nav-link {
 header .nav-item.active .nav-link:after {
   width: 100%;
 }
+header .navbar-toggler {
+  background-color: #35a22c;
+}
+header .navbar-toggler:focus {
+  outline: none;
+}
+header .navbar-toggler:hover {
+  background-color: #0ea8cf;
+}
+header .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 /* CAROUSEL */
 #portfolio__carousel .carousel-caption {
   bottom: 50%;
-  transform: translateY(50%);
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
 #portfolio__carousel .carousel-caption h5 {
   font-size: 3.5rem;
@@ -64,11 +77,14 @@ header .nav-item.active .nav-link:after {
 #portfolio__carousel .carousel-caption p {
   font-size: 1.5rem;
 }
+#portfolio__carousel .carousel-item img {
+  object-fit: cover;
+  height: 100%;
+}
 .carousel-caption img {
-  width: 150px;
-  height: 150px;
+  width: 140px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin: auto;
 }
 .carousel-indicators li {
   width: 15px;
@@ -233,6 +249,15 @@ header .nav-item.active .nav-link:after {
   backdrop-filter: blur(3px);
   box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
   padding: 45px;
+}
+.award__right {
+  padding: 45px 0;
+}
+.award__left h2 {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  color: #1a1d2d;
+  font-weight: 600;
 }
 /* FOOTER */
 footer {
